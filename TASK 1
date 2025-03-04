@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAGATH P - Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>JAGATH P</h1>
+            <p>Web Developer</p>
+        </div>
+    </header>
+   
+    <section class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="./Daniel/Daniel_Titus.jpg" alt="JAGATH P" class="profile-pic">
+            <p>I am a highly motivated Web Developer with a strong passion for front-end technologies, user experience, and performance optimization. Currently pursuing a B.Tech in Artificial Intelligence & Data Science, I blend analytical thinking with creative problem-solving to develop intuitive and engaging websites.</p>
+            <p>During my internship at CodSoft, I gained hands-on experience in real-world web development projects, strengthening my skills in HTML, CSS, and JavaScript. My expertise lies in creating structured, interactive, and visually appealing web applications with seamless user interfaces.</p>
+            <p>With a keen interest in modern web frameworks and a dedication to continuous learning, I strive to push boundaries in web development and deliver high-quality digital solutions.</p>
+        </div>
+    </section>
+
+   
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Phone: 9787124888</p>
+            <p>Email: <a href="mailto:danirozario@gmail.com">danirozario@gmail.com</a></p>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* Header */
+header {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    background: #ff5e78; /* Pink background */
+    color: white;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* Sections */
+.about, .contact {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Profile Picture - Smaller Size */
+.profile-pic {
+    display: block;
+    width: 120px; /* Reduced size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    float: left; /* Moves image to the left */
+    margin-right: 20px; /* Adds space between text and image */
+}
+
+/* About Section */
+.about {
+    background: #f5f5f5; /* Light gray background */
+    border: 1px solid #ddd; /* Light border */
+}
+
+/* Contact Section with Black Background */
+.contact {
+    text-align: center;
+    background: black; /* Black background for contact section */
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Contact Links */
+.contact a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Mobile and Small Screens */
+@media (max-width: 768px) {
+    /* Profile picture will take full width on smaller screens */
+    .profile-pic {
+        width: 100%;
+        margin-right: 0;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    /* Sections will take full width */
+    .container {
+        width: 100%;
+    }
+}
